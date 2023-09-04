@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("./images/background.png");
+    background-position: center;
+    background-size: cover;
+    padding: 0 7%;
+    color: white;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+nav {
+    margin-top: 15px;
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    align-items: center;
+    
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+
+nav ul {
+    flex: 1;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 5px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .btn {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.content {
+    margin-top: 12px;
+    text-align: left;
+    align-self: self-start;
+}
+
+.content h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.content h1 span {
+    color: #fe9b09;
+}
+
+.content p {
+    line-height: 22px;
+    font-size: 14px;
+}
+
+.content .btn {
+    display: inline-block;
+    margin-top: 30px;
+    background: #fe9b09;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+
+.coin-list {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.coin {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 10px;
+    color: #fe9b09;
+    border: 1px solid white;
+    padding: 20px 30px;
+    border-radius: 8px;
+}
+
+.coin img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.coin h3 {
+    color: white;
+    margin-bottom: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 5%;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .content .btn {
+        padding: 12px 25px;
+    }
+}
+
+
+nav ul li a:hover {
+    color: #ff9900; 
+    transition: color 0.5s ease;
+}
+
+
+nav .btn:hover {
+    background-color: #22005f; 
+    color: #fff; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.content .btn:hover {
+    background-color: #ffaf37; 
+    color: #fff; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+
+.coin-list .coin:hover {
+    background-color: #22005f; 
+    transition: background-color 0.3s; 
+}
