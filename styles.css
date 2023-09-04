@@ -160,3 +160,7 @@ nav .btn:hover {
     background-color: #22005f; 
     transition: background-color 0.3s; 
 }
+
+.last{
+    color: rgb(160, 160, 160);
+}
